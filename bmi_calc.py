@@ -16,7 +16,7 @@ name = st.text_input("Name")
 st.number_input("Enter your weight (kg)",  placeholder="e.g., 70", key="weight")
 st.number_input("Enter your height (cm)", min_value=50.00, max_value=250.00, placeholder="e.g., 175", key="height")
 
-if st.button("Calculate BMI", use_container_width=True):
+if st.button("Calculate BMI",type="primary", use_container_width=True):
 
     if not name:
         st.warning("Please enter your name.")
